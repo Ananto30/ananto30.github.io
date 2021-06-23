@@ -9,11 +9,11 @@
     margin: 0;
   }
   body {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    background: #000;
-    color: #fff;
+    font-family: Ubuntu, sans-serif;
+    /* background: #000;
+    color: #fff; */
   }
   a {
     color: var(--theme-color);
@@ -73,7 +73,8 @@
   }
   .contacts a {
     padding: 4px 8px;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(0, 0, 0, 0.075);
     border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
@@ -85,10 +86,10 @@
     vertical-align: middle;
   }
   .contacts a:hover {
-    background: rgba(255,255,255,0.125);
+    background: rgba(0, 0, 0, 0.125);
   }
   .contacts a:active {
-    background: rgba(255,255,255,0.075);
+    background: rgba(0, 0, 0, 0.075);
   }
   .contacts .icon {
     width: 24px;
@@ -115,8 +116,8 @@
   }
   codersrank-summary {
     --bg-color: transparent;
-    --badge-bg-color: #161616;
-    --badge-text-color: #fff;
+    /* --badge-bg-color: #161616;
+    --badge-text-color: #fff; */
     --badges-padding: 0px;
     --badge-padding: 8px;
     --badge-margin: 16px;
@@ -127,29 +128,42 @@
     --badge-icon-size: 32px;
     --badge-border: 1px solid rgba(0, 0, 0, 0.1);
     --badge-box-shadow: none;
+
+    /* --border: 1px solid rgba(0, 0, 0, 0.1); */
+
   }
   .activity-widget {
     padding: 8px;
     border-radius: 8px;
-    background: #161616;
+    /* background: #161616; */
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
   codersrank-activity {
-    --bg-color-0: #111;
+    /* --bg-color-0: #111; */
     --bg-color-1: rgba(var(--theme-color-rgb), 0.25);
     --bg-color-2: rgba(var(--theme-color-rgb), 0.5);
     --bg-color-3: rgba(var(--theme-color-rgb), 0.75);
     --bg-color-4: rgba(var(--theme-color-rgb), 1);
-    --label-text-color: rgba(255, 255, 255, 0.54);
+    /* --label-text-color: rgba(255, 255, 255, 0.54); */
     --svg-width: 1080px;
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
     padding-top: 100px;
     margin-top: -100px;
+
+
+  }
+  .skills-chart {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-top: 16px;
   }
   codersrank-skills-chart {
-    --label-text-color: rgba(255, 255, 255, 0.54);
-    --chart-bg-color: #161616;
+    /* --label-text-color: rgba(255, 255, 255, 0.54);
+    --chart-bg-color: #161616; */
     --chart-border-radius: 8px;
     --axis-bg-color: transparent;
     --label-font-size: 12px;
@@ -158,27 +172,43 @@
   codersrank-portfolio,
   codersrank-work-experience,
   codersrank-education {
-    --item-bg-color: #161616;
+    /* --item-bg-color: #161616; */
     --item-border-radius: 8px;
     --item-spacing: 16px;
     --item-padding: 16px;
     --logo-size: 64px;
-    --tag-bg-color: rgba(255,255,255,0.075);
+    /* --tag-bg-color: rgba(255,255,255,0.075); */
+
   }
   codersrank-portfolio {
     --grid-columns: 2;
     
     --link-text-color: var(--theme-color);
-    --link-bg-color: rgba(255,255,255,0.1);
-    --link-hover-bg-color: rgba(255,255,255,0.125);
-    --link-active-bg-color: rgba(255,255,255,0.075);
+    --link-bg-color: rgb(236 236 243);
+    /* --link-hover-bg-color: rgba(255,255,255,0.125); */
+    /* --link-active-bg-color: rgba(255,255,255,0.075); */
     --link-border-radius: 8px;
     --link-padding: 4px 8px;
     --link-text-transform: none;
     --link-font-weight: 500;
     --link-margin: 8px;
+
+    --item-border-radius: 8px;
+    --item-border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
+
+  codersrank-work-experience {
+    --item-border-radius: 8px;
+    --item-border: 1px solid rgba(0, 0, 0, 0.1);
+    /* --item-bg-color: rgba(0, 0, 0, 0.025); */
+  }
+
+  codersrank-education {
+    --item-border-radius: 8px;
+    --item-border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
   /* Footer */
   footer {
     text-align: center;
