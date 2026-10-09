@@ -1,321 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azizul Haque Ananto | Portfolio</title>
-    <style>
-        :root {
-            --bg: #23272a;
-            /* Discord dark background */
-            --text: #f2f3f5;
-            /* Discord light text */
-            --accent: #00bfae;
-            /* Vibrant accent */
-            --link-hover: #1de9b6;
-            --card-bg: #2c2f33;
-            /* Discord card background */
-            --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
-            --link-visited: #7fffd4;
-            --link-active: #00bfa6;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <body>
+    <main class="container">
+      <header>
+        <p class="availability">Software engineer / Amsterdam</p>
+        <h1>Azizul Haque<br />Ananto</h1>
+        <p class="intro">
+          Backend engineer building durable systems for products used at scale.
+        </p>
 
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: var(--bg);
-            color: var(--text);
-            padding: 2rem;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            font-weight: normal;
-            margin-bottom: 2rem;
-            color: #b9bbbe;
-        }
-
-        .links a {
-            color: var(--accent);
-            text-decoration: none;
-            font-size: 1rem;
-            margin-right: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .links a:visited {
-            color: var(--link-visited);
-        }
-
-        .links a:hover,
-        .links a:focus {
-            color: var(--link-hover);
-        }
-
-        .links a:active {
-            color: var(--link-active);
-        }
-
-        .section {
-            margin-top: 3rem;
-        }
-
-        .project {
-            margin-bottom: 2rem;
-        }
-
-        .project h3 {
-            color: var(--accent);
-            margin-bottom: 0.5rem;
-        }
-
-        .project p {
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .links a {
-                display: block;
-                margin-bottom: 1rem;
-            }
-        }
-
-        .projects-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .project {
-            flex: 1 1 300px;
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 1.2rem 1rem;
-            box-shadow: var(--card-shadow);
-            margin-bottom: 0;
-        }
-
-        .experience-list {
-            list-style: none;
-            padding: 0;
-            margin-top: 2rem;
-        }
-
-        .experience-list li {
-            margin-bottom: 2rem;
-            padding: 1.2rem 1rem;
-            background: var(--card-bg);
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
-        }
-
-        .exp-role {
-            display: block;
-            color: #b9bbbe;
-            font-size: 0.75rem;
-            margin-top: 0.2rem;
-            margin-bottom: 0.4rem;
-        }
-
-        .exp-desc {
-            display: block;
-            margin-top: 0.2rem;
-            color: #f2f3f5;
-            font-size: 1rem;
-        }
-
-        @media (max-width: 900px) {
-            .projects-list {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-
-            .project {
-                flex: 1 1 100%;
-            }
-        }
-
-        .exp-time {
-            display: block;
-            color: #43b581;
-            font-size: 0.92rem;
-            margin-bottom: 0.2rem;
-            margin-top: 0.1rem;
-            letter-spacing: 0.01em;
-        }
-
-        .project h3 a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .project h3 a:visited {
-            color: var(--link-visited);
-        }
-
-        .project h3 a:hover,
-        .project h3 a:focus {
-            color: var(--link-hover);
-        }
-
-        .project h3 a:active {
-            color: var(--link-active);
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <h1>Azizul Haque Ananto</h1>
-        <h2>Software Engineer 🇵🇸 🇳🇱</h2>
-
-        <div class="links">
-            <a href="https://www.linkedin.com/in/anantodev/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Ananto30" target="_blank">GitHub</a>
-            <a href="https://azizulhaq-ananto.medium.com/" target="_blank">Blog</a>
-            <a href="https://askhadith.com" target="_blank">Ask Hadith</a>
-        </div>
-
-        <div class="section">
+        <nav class="links" aria-label="Social links">
+          <a
+            href="https://www.linkedin.com/in/anantodev/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/Ananto30" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://azizulhaq-ananto.medium.com/"
+            target="_blank"
+            rel="noreferrer"
+            >Blog</a
+          >
+          <a href="https://askhadith.com" target="_blank" rel="noreferrer"
+            >Ask Hadith</a
+          >
+        </nav>
+      </header>
+      <section class="section about">
+        <p>
+          Hi, I'm a backend engineer with 8+ years of experience building
+          scalable, cloud-based products for millions of users. My expertise is
+          in high-throughput systems, distributed architectures, and
+          asynchronous technologies using Go, Python, and Java. I’m passionate
+          about deep learning, AI/ML, and always eager to solve new challenges.
+        </p>
+      </section>
+      <section class="section projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-list">
+          <div class="project">
+            <h3>
+              <a
+                href="https://github.com/Ananto30/zero"
+                target="_blank"
+                rel="noreferrer"
+                >Zero</a
+              >
+            </h3>
+            <p>A high-performance and fast Python RPC framework.</p>
+          </div>
+          <div class="project">
+            <h3>
+              <a
+                href="https://github.com/Ananto30/olosh"
+                target="_blank"
+                rel="noreferrer"
+                >Olosh</a
+              >
+            </h3>
             <p>
-                Hi, I'm a backend engineer with 6+ years of experience building scalable, cloud-based products for
-                millions of users. My expertise is in high-throughput systems, distributed architectures, and
-                asynchronous technologies using Go, Python, and Java. I’m passionate about deep learning, AI/ML, and
-                always eager to solve new challenges.
+              Make idle CPUs useful with distributed local compute
+              orchestration.
             </p>
+          </div>
+          <div class="project">
+            <h3>
+              <a
+                href="https://github.com/Ananto30/gmocker"
+                target="_blank"
+                rel="noreferrer"
+                >GMocker</a
+              >
+            </h3>
+            <p>Create a blazing fast mock server with just a JSON file.</p>
+          </div>
+          <div class="project">
+            <h3>
+              <a
+                href="https://github.com/Ananto30/ask-hadith"
+                target="_blank"
+                rel="noreferrer"
+                >Ask Hadith</a
+              >
+            </h3>
+            <p>A Hadith search engine.</p>
+          </div>
         </div>
+        <p class="more-projects">...and many more on my GitHub.</p>
+      </section>
 
-        <div class="section">
-            <h2>Featured Projects</h2>
-            <div class="projects-list">
-                <div class="project">
-                    <h3><a href="https://github.com/Ananto30/zero" target="_blank">Zero</a></h3>
-                    <p>A high-performance and fast Python RPC framework.</p>
-                </div>
-                <div class="project">
-                    <h3><a href="https://github.com/Ananto30/contractest" target="_blank">Contractest</a></h3>
-                    <p>Generate test recordings and replay them to ensure contracts are fine.</p>
-                </div>
-                <div class="project">
-                    <h3><a href="https://github.com/Ananto30/gmocker" target="_blank">GMocker</a></h3>
-                    <p>Create a blazing fast mock server with just a JSON file.</p>
-                </div>
-                <div class="project">
-                    <h3><a href="https://github.com/Ananto30/ask-hadith" target="_blank">Ask Hadith</a></h3>
-                    <p>A Hadith search engine.</p>
-                </div>
-            </div>
-            <div style="margin-top: 2rem; font-size: 0.9rem;">
-                ...and many more on my GitHub.
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Experience</h2>
-            <ul class="experience-list">
-                <li>
-                    <strong><a href="https://www.kpn.com/" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">KPN</a></strong>
-                    <span class="exp-role">Software Engineer</span>
-                    <span class="exp-time">2yr+ (June 2023 – Present) · Amsterdam, NL</span>
-                    <span class="exp-desc">Scaling and optimizing the KPN web shop.</span>
-                </li>
-                <li>
-                    <strong><a href="https://woolsocks.eu/en-NL" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">Amsterdam Platform Creation</a></strong>
-                    <span class="exp-role">Software Engineer</span>
-                    <span class="exp-time">1yr · Amsterdam, NL</span>
-                    <span class="exp-desc">Built gift card and referral services, platform tools, and maintained
-                        cashback systems.</span>
-                </li>
-                <li>
-                    <strong><a href="https://x.com/eblitzgaming" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">eBlitz</a></strong>
-                    <span class="exp-role">Software Engineer (Part-time)</span>
-                    <span class="exp-time">1yr 2mo · London, UK</span>
-                    <span class="exp-desc">Developed backend for gamer matchmaking, recommendation systems, and improved
-                        performance/testing.</span>
-                </li>
-                <li>
-                    <strong><a href="https://rihal.om/" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">Rihal - Data Migration and Services
-                            LLC</a></strong>
-                    <span class="exp-role">Senior Backend Developer, Team Lead</span>
-                    <span class="exp-time">10mo · Muscat, Oman</span>
-                    <span class="exp-desc">Led a team to build planning and scheduling tools for the Petroleum Dept of
-                        Oman.</span>
-                </li>
-                <li>
-                    <strong><a href="https://sixads.net/" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">sixads</a></strong>
-                    <span class="exp-role">Software Developer</span>
-                    <span class="exp-time">3mo · Lithuania</span>
-                    <span class="exp-desc">Built ad-tech MVP with Python/Django; collaborated with Amazon team.</span>
-                </li>
-                <li>
-                    <strong><a href="https://www.bkash.com/" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">bKash Limited</a></strong>
-                    <span class="exp-role">Senior Engineer</span>
-                    <span class="exp-time">1yr 10mo · Dhaka, BD</span>
-                    <span class="exp-desc">Built scalable QR and bill payment systems for millions of users; led backend
-                        innovations.</span>
-                </li>
-                <li>
-                    <strong><a href="https://www.sens.dk/en/" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">SENS Innovation ApS</a></strong>
-                    <span class="exp-role">Back-end Developer (Part-time)</span>
-                    <span class="exp-time">2yr 6mo · Copenhagen (Remote)</span>
-                    <span class="exp-desc">Migrated monolith to microservices, improved performance, and implemented
-                        caching.</span>
-                </li>
-                <li>
-                    <strong>REALGENIE LTD</strong>
-                    <span class="exp-role">Python Developer (Part-time)</span>
-                    <span class="exp-time">10mo · UK (Remote)</span>
-                    <span class="exp-desc">Developed fast analysis tools and modular AWS Lambda codebase.</span>
-                </li>
-                <li>
-                    <strong><a href="https://pathao.com/" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">Pathao</a></strong>
-                    <span class="exp-role">Software Engineer</span>
-                    <span class="exp-time">1yr 3mo · Dhaka, BD</span>
-                    <span class="exp-desc">Built loyalty and payment systems, improved search, and automated processes.
-                        On junior role built API automation framework and contributed to Android automation.</span>
-                </li>
-                <li>
-                    <strong><a href="https://www.bracu.ac.bd/" target="_blank"
-                            style="color:var(--accent);text-decoration:none;">BRAC University</a></strong>
-                    <span class="exp-role">Teaching Assistant</span>
-                    <span class="exp-time">3mo · Dhaka, BD</span>
-                    <span class="exp-desc">Assisted faculty and students with teaching and lab assignments.</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</body>
-
+      <section class="section experience">
+        <h2>Experience</h2>
+        <ul class="experience-list">
+          <li>
+            <strong
+              ><a href="https://www.kpn.com/" target="_blank">KPN</a></strong
+            >
+            <span class="exp-role">Senior Software Engineer</span>
+            <span class="exp-time">June 2023 – Present · Amsterdam, NL</span>
+            <span class="exp-desc"
+              >Raised mobile trade-in orders by 8%. Rewrote TV product logic,
+              cutting incidents by 70%.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://woolsocks.eu/en-NL" target="_blank"
+                >Amsterdam Platform Creation</a
+              ></strong
+            >
+            <span class="exp-role">Software Engineer</span>
+            <span class="exp-time">June 2022 – May 2023 · Amsterdam, NL</span>
+            <span class="exp-desc"
+              >Built a gift-card platform for 750k users. Referral features
+              drove 50k+ acquisitions.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://x.com/eblitzgaming" target="_blank"
+                >eBlitz</a
+              ></strong
+            >
+            <span class="exp-role">Software Engineer (Part-time)</span>
+            <span class="exp-time">1yr 2mo · London, UK</span>
+            <span class="exp-desc"
+              >Built backend for gamer matchmaking and recommendations. Worked
+              on performance and test automation.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://rihal.om/" target="_blank"
+                >Rihal - Data Migration and Services LLC</a
+              ></strong
+            >
+            <span class="exp-role">Senior Backend Developer, Team Lead</span>
+            <span class="exp-time">10mo · Muscat, Oman</span>
+            <span class="exp-desc"
+              >Led three engineers on a gas-well planning optimizer. Built
+              scheduling tools and CI/CD workflows.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://sixads.net/" target="_blank">sixads</a></strong
+            >
+            <span class="exp-role">Software Developer</span>
+            <span class="exp-time">3mo · Lithuania</span>
+            <span class="exp-desc"
+              >Built an ad-tech MVP in Python/Django. Worked with Amazon on
+              integration and delivery.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://www.bkash.com/" target="_blank"
+                >bKash Limited</a
+              ></strong
+            >
+            <span class="exp-role">Senior Engineer</span>
+            <span class="exp-time">1yr 10mo · Dhaka, BD</span>
+            <span class="exp-desc"
+              >Built a QR engine for 7M+ monthly active users. Async bill
+              middleware cut development cost by 70%.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://www.sens.dk/en/" target="_blank"
+                >SENS Innovation ApS</a
+              ></strong
+            >
+            <span class="exp-role">Back-end Developer (Part-time)</span>
+            <span class="exp-time">2yr 6mo · Copenhagen (Remote)</span>
+            <span class="exp-desc"
+              >Migrated a monolith to message-driven microservices. Improved
+              performance by 40%.</span
+            >
+          </li>
+          <li>
+            <strong>REALGENIE LTD</strong>
+            <span class="exp-role">Python Developer (Part-time)</span>
+            <span class="exp-time">10mo · UK (Remote)</span>
+            <span class="exp-desc"
+              >Built fast analysis tools and modular Lambda services. Supported
+              a scalable AWS codebase.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://pathao.com/" target="_blank">Pathao</a></strong
+            >
+            <span class="exp-role">Software Engineer</span>
+            <span class="exp-time">1yr 3mo · Dhaka, BD</span>
+            <span class="exp-desc"
+              >Built a loyalty system for 1M+ users. Cut search response time by
+              60% with Elasticsearch.</span
+            >
+          </li>
+          <li>
+            <strong
+              ><a href="https://www.bracu.ac.bd/" target="_blank"
+                >BRAC University</a
+              ></strong
+            >
+            <span class="exp-role">Teaching Assistant</span>
+            <span class="exp-time">3mo · Dhaka, BD</span>
+            <span class="exp-desc"
+              >Supported faculty teaching and lab sessions. Helped students with
+              course assignments.</span
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
